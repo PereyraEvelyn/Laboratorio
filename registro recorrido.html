@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Crear Reserva - CityTur Catamarca</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#"> Inicio</a>
+            <a href="#"> Recorridos</a>
+            <a href="#"> Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1> Realizar una Reserva</h1>
+        <p> Completa el siguiente formulario para asegurar tu lugar en nuestros recorridos.</p>
+
+        <form>
+            <div>
+                <label for="recorrido">Selecciona el Recorrido</label><br>
+                <select id="recorrido" required>
+                    <option selected disabled value="">Elegir...</option>
+                    <option value="1">Circuito Histórico</option>
+                    <option value="2">Circuito Dique El Jumeal</option>
+                    <option value="3">Circuito Gruta Virgen del Valle</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="fecha">Fecha del Recorrido</label><br>
+                <input type="date" id="fecha" required>
+            </div>
+            <br>
+            <div>
+                <label for="hora">Hora de Salida</label><br>
+                <select id="hora" required>
+                    <option selected disabled value="">Elegir...</option>
+                    <option>09:00</option>
+                    <option>11:00</option>
+                    <option>15:00</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="punto-partida">Punto de Partida</label><br>
+                <select id="punto-partida" required>
+                    <option selected disabled value="">Elegir...</option>
+                    <option>Plaza 25 de Mayo</option>
+                    <option>Parque Adán Quiroga</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="cantidad-personas">Cantidad de Personas</label><br>
+                <input type="number" id="cantidad-personas" min="1" max="10" placeholder="Ej: 2" required>
+            </div>
+            <br>
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CityTur Catamarca. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
