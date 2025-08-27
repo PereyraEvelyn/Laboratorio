@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityTur Catamarca</title>
+</head>
+<body>
+   <header>
+    <h1>CityTur Catamarca</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="recorridos.html">Recorridos</a>
+        <a href="puntos.html">Puntos Turísticos</a>
+        <a href="reservas.html">Reservar</a>
+        <a href="login.html">Iniciar Sesión</a>
+    </nav>
+  </header>
+
+    <h2>Recorridos turísticos por San Fernando del Valle de Catamarca y alrededores.</h2>
+
+    <section>
+      <h2>Buscar un recorrido</h2>
+      <form action="#" method="get">
+        <label for="fecha">Fecha</label>
+        <input id="fecha" name="fecha" type="date" required>
+
+        <label for="punto-partida">Punto de partida</label>
+        <input id="punto-partida" name="punto" type="text" placeholder="Plaza 25 de Mayo" required>
+
+        <label for="personas">Cantidad de personas</label>
+        <input id="personas" name="personas" type="number" min="1" step="1" required>
+
+        <button type="submit">Consultar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Puntos turísticos destacados</h2>
+      <ul>
+        <li>
+            <h3>Catedral Basílica</h3>
+            <p>Arquitectura neoclásica y centro religioso de la ciudad.</p>
+            <a href="#">Más información</a>
+        </li>
+        <li>
+            <h3>Casa de Gobierno</h3>
+            <p>Edificio histórico y sede del Poder Ejecutivo provincial.</p>
+            <a href="#">Más información</a>
+        </li>
+        <li>
+            <h3>Dique El Jumeal</h3>
+            <p>Espacio único de contacto con la naturaleza.</p>
+            <a href="#">Más información</a>
+        </li>
+      </ul>
+    </section>
+
+  <footer>
+    <p>2025 Municipalidad de SFV de Catamarca – CityTur Catamarca</p>
+  </footer>
+</body>
+</html>
