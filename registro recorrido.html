@@ -3,68 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Crear Reserva - CityTur Catamarca</title>
+    <title>Registrar Nuevo Recorrido - Admin CityTur</title>
 </head>
 <body>
 
     <header>
         <nav>
-            <a href="#"> Inicio</a>
-            <a href="#"> Recorridos</a>
-            <a href="#"> Login</a>
+            <a href="#">Gestionar Recorridos</a>
+            <a href="#">Ver Reservas</a>
+            <a href="#">Cerrar Sesión</a>
         </nav>
     </header>
 
     <main>
-        <h1> Realizar una Reserva</h1>
-        <p> Completa el siguiente formulario para asegurar tu lugar en nuestros recorridos.</p>
+        <h1>Registrar un Nuevo Recorrido 🗺️</h1>
+        <p>Complete los datos para agregar un nuevo recorrido al sistema.</p>
 
         <form>
             <div>
-                <label for="recorrido">Selecciona el Recorrido</label><br>
-                <select id="recorrido" required>
-                    <option selected disabled value="">Elegir...</option>
-                    <option value="1">Circuito Histórico</option>
-                    <option value="2">Circuito Dique El Jumeal</option>
-                    <option value="3">Circuito Gruta Virgen del Valle</option>
-                </select>
+                <label for="nombre-recorrido">Nombre del Recorrido</label><br>
+                <input type="text" id="nombre-recorrido" name="nombre_recorrido" placeholder="Ej: Circuito Histórico" size="50" required>
             </div>
             <br>
+
             <div>
-                <label for="fecha">Fecha del Recorrido</label><br>
-                <input type="date" id="fecha" required>
+                <label for="punto-partida">Punto de Partida (De dónde sale)</label><br>
+                <input type="text" id="punto-partida" name="punto_partida" placeholder="Ej: Plaza 25 de Mayo" size="50" required>
             </div>
             <br>
+
             <div>
-                <label for="hora">Hora de Salida</label><br>
-                <select id="hora" required>
-                    <option selected disabled value="">Elegir...</option>
-                    <option>09:00</option>
-                    <option>11:00</option>
-                    <option>15:00</option>
-                </select>
+                <label for="direccion">Dirección del Punto de Partida</label><br>
+                <input type="text" id="direccion" name="direccion" placeholder="Ej: Sarmiento 683" size="50" required>
             </div>
             <br>
+
             <div>
-                <label for="punto-partida">Punto de Partida</label><br>
-                <select id="punto-partida" required>
-                    <option selected disabled value="">Elegir...</option>
-                    <option>Plaza 25 de Mayo</option>
-                    <option>Parque Adán Quiroga</option>
-                </select>
+                <label for="descripcion">Descripción Breve del Recorrido</label><br>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="52" placeholder="Describa brevemente los puntos de interés del recorrido..."></textarea>
             </div>
             <br>
-            <div>
-                <label for="cantidad-personas">Cantidad de Personas</label><br>
-                <input type="number" id="cantidad-personas" min="1" max="10" placeholder="Ej: 2" required>
-            </div>
-            <br>
-            <button type="submit">Confirmar Reserva</button>
+
+            <button type="submit">Guardar Recorrido</button>
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2025 CityTur Catamarca. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Panel de Administración de CityTur Catamarca.</p>
     </footer>
 
 </body>
