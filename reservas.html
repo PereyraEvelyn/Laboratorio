@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar recorrido – CityTur</title>
+</head>
+<body>
+  <header>
+    <h1>CityTur Catamarca</h1>
+    <p>Recorridos turísticos por San Fernando del Valle de Catamarca y alrededores.</p>
+     <nav>
+        <a href="index.html">Inicio</a>
+        <a href="recorridos.html">Recorridos</a>
+        <a href="puntos.html">Puntos Turísticos</a>
+        <a href="reservas.html">Reservar</a>
+        <a href="login.html">Iniciar Sesión</a>
+    </nav>
+  </header>
+  <br><br>
+  
+  <section>
+    <h2>Reservar</h2>
+    <form action="#" method="post">
+    <fieldset>
+    <legend>Datos del recorrido</legend>
+
+    <label for="recorrido-id">Recorrido</label>
+    <select id="recorrido-id" name="recorrido_id" required>
+    <option value="">Seleccionar…</option>
+    <option value="1">Centro Histórico</option>
+    <option value="2">Mirador El Jumeal</option>
+    </select>
+    <br><br>
+
+    <label for="fecha">Fecha</label>
+    <input id="fecha" name="fecha" type="date" required>
+    <br><br>
+
+
+    <label for="hora">Hora</label>
+    <input id="hora" name="hora" type="time" required>
+    <br><br>
+
+    <label for="punto-salida">Punto de partida</label>
+    <select id="punto-salida" name="punto_salida" required>
+    <option value="">Seleccionar…</option>
+    <option value="plaza">Plaza 25 de Mayo</option>
+    <option value="catedral">Catedral</option>
+    <option value="jumeal">Mirador El Jumeal</option>
+    </select>
+    <br><br>
+
+
+    <label for="cantidad">Cantidad de personas</label>
+    <input id="cantidad" name="cantidad" type="number" min="1" step="1" required>
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+    <legend>Datos del titular</legend>
+    <label for="nombre">Nombre</label>
+    <input id="nombre" name="nombre" type="text" required>
+    <br><br>
+
+
+    <label for="apellido">Apellido</label>
+    <input id="apellido" name="apellido" type="text" required>
+    <br><br>
+
+
+    <label for="email">Correo electrónico</label>
+    <input id="email" name="email" type="email" autocomplete="email" required>
+    <br><br>
+
+
+    <label for="telefono">Teléfono</label>
+    <input id="telefono" name="telefono" type="tel" placeholder="Ej: 3834123456">
+    <br><br>
+
+    <input id="aviso-email" name="avisar_por_email" type="checkbox" value="1" checked> Recibir avisos por email ante cambios
+    
+    </fieldset>
+     <br>
+    <input type="reset" value="Cancelar">
+    <input type="submit" value="Aceptar">
+    </form>
+  </section>
+
+    <footer>
+        <p>2025 Municipalidad de SFV de Catamarca – CityTur Catamarca</p>
+  </footer>
+</body>
+</html>
