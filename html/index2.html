@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CityTur Catamarca</title>
+
+  <!-- Bootstrap CSS (grid + utilidades responsive) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fuentes (opcional, visual) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos EXTERNA (colores + toques visuales) -->
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="bg-white">
+
+  <!-- HEADER -->
+  <header class="border-bottom">
+    <!-- Barra superior (container-fluid = 100% ancho) -->
+    <div class="container-fluid bg-muni text-white">
+      <div class="container py-3">
+        <h1 class="m-0 site-title">CityTur Catamarca</h1>
+      </div>
+    </div>
+
+    <!-- NAV (respetando tus <nav> y <a>): ahora con fondo verde y botones verdes -->
+    <nav class="bg-muni">
+      <div class="container">
+        <!-- Usamos flex de Bootstrap para alinear y wrap en móvil -->
+        <div class="d-flex flex-wrap gap-2 py-2 justify-content-center justify-content-lg-start">
+          <a href="index.html" class="nav-btn">Inicio</a>
+          <a href="recorridos.html" class="nav-btn">Recorridos</a>
+          <a href="puntos.html" class="nav-btn">Puntos Turísticos</a>
+          <a href="reservas.html" class="nav-btn">Reservar</a>
+          <!-- “Iniciar Sesión” permanece como <a> dentro del nav y estilo verde -->
+          <a href="login.html" class="nav-btn nav-btn--solid">Iniciar Sesión</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SUBTÍTULO/HERO LIGERO (contenido centrado, sin cambiar tu <h2>) -->
+  <div class="container my-4">
+    <h2 class="lead-hero text-center text-md-start">
+      Recorridos turísticos por San Fernando del Valle de Catamarca y alrededores.
+    </h2>
+  </div>
+
+  <!-- BUSCADOR -->
+  <section class="container my-4">
+    <h2 class="section-title">Buscar un recorrido</h2>
+
+    <!-- Card responsiva (sin alterar tus etiquetas del form) -->
+    <div class="card border-0 shadow-sm card-soft">
+      <div class="card-body">
+        <form action="#" method="get" class="row g-3">
+          <div class="col-12 col-md-4">
+            <label for="fecha" class="form-label">Fecha</label>
+            <input id="fecha" name="fecha" type="date" class="form-control" required>
+          </div>
+
+          <div class="col-12 col-md-5">
+            <label for="punto-partida" class="form-label">Punto de partida</label>
+            <input id="punto-partida" name="punto" type="text" class="form-control" placeholder="Plaza 25 de Mayo" required>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <label for="personas" class="form-label">Cantidad de personas</label>
+            <input id="personas" name="personas" type="number" min="1" step="1" class="form-control" required>
+          </div>
+
+          <div class="col-12 d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary px-4">Consultar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Cinta decorativa (similar a la guía) -->
+    <div class="ribbon mt-2"></div>
+  </section>
+
+  <!-- PUNTOS DESTACADOS -->
+  <section class="bg-section py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Puntos turísticos destacados</h2>
+
+      <!-- Reutilizo tu <ul> y <li>, agrego clases para grid/carta -->
+      <ul class="list-unstyled row g-4 m-0">
+        <li class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="ratio ratio-16x9 bg-cover" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop');"></div>
+            <div class="card-body">
+              <span class="badge text-bg-accent mb-2">Arquitectura</span>
+              <h3 class="h5">Catedral Basílica</h3>
+              <p>Arquitectura neoclásica y centro religioso de la ciudad.</p>
+              <a href="#" class="stretched-link">Más información</a>
+            </div>
+          </article>
+        </li>
+
+        <li class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="ratio ratio-16x9 bg-cover" style="background-image:url('https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=1200&auto=format&fit=crop');"></div>
+            <div class="card-body">
+              <span class="badge text-bg-accent mb-2">Historia</span>
+              <h3 class="h5">Casa de Gobierno</h3>
+              <p>Edificio histórico y sede del Poder Ejecutivo provincial.</p>
+              <a href="#" class="stretched-link">Más información</a>
+            </div>
+          </article>
+        </li>
+
+        <li class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="ratio ratio-16x9 bg-cover" style="background-image:url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop');"></div>
+            <div class="card-body">
+              <span class="badge text-bg-accent mb-2">Naturaleza</span>
+              <h3 class="h5">Dique El Jumeal</h3>
+              <p>Espacio único de contacto con la naturaleza.</p>
+              <a href="#" class="stretched-link">Más información</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER (visible, con contraste y padding) -->
+  <footer class="footer-muni text-white mt-4">
+    <div class="container py-4">
+      <p class="mb-1 small">2025 Municipalidad de SFV de Catamarca – CityTur Catamarca</p>
+      <div class="d-flex gap-3 small flex-wrap">
+        <a href="#" class="link-light text-decoration-none">Accesibilidad</a>
+        <a href="#" class="link-light text-decoration-none">Privacidad</a>
+        <a href="#" class="link-light text-decoration-none">Contacto</a>
+      </div>
+    </div>
+    <div class="bg-dark-muni text-center small py-2">© 2025</div>
+  </footer>
+
+  <!-- Bootstrap JS (solo si usás componentes colapsables) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

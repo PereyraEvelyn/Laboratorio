@@ -1,0 +1,115 @@
+/* =========================================================
+   PALETA + TIPOGRAFÍA
+   ========================================================= */
+:root{
+  --muni-green:#0f5a4a;      /* Verde institucional (nav, títulos) */
+  --muni-green-dark:#0b4035; /* Variante más oscura (pie inferior) */
+  --accent-yellow:#f0b323;   /* Acento (badges / detalles) */
+  --accent-coral:#e85d6a;    /* Acento secundario */
+  --ink:#1b1f24;             /* Texto principal */
+  --soft:#f6f7f8;            /* Fondos suaves */
+}
+
+/* ===== Etiquetas (agrupadas) ===== */
+html, body{
+  font-family:"Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color:var(--ink);
+  background:#fff;
+}
+h1, h2, h3, .site-title{
+  font-family:"Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight:700;
+}
+
+/* =========================================================
+   UTILIDADES DE COLOR (clases reutilizables)
+   ========================================================= */
+.bg-muni{ background-color:var(--muni-green) !important; }
+.bg-dark-muni{ background-color:var(--muni-green-dark) !important; }
+
+/* Badge de acento (aplica sobre la clase de Bootstrap .badge) */
+.text-bg-accent{
+  color:#111; 
+  background-color:var(--accent-yellow) !important;
+}
+
+/* =========================================================
+   NAV (selectores combinados para los <a> del menú)
+   ========================================================= */
+/* Botones de menú: todos verdes por pedido del usuario */
+nav .nav-btn{
+  /* apariencia de botón */
+  display:inline-block;
+  padding:.45rem .9rem;
+  background:rgba(255,255,255,.15); /* verde semi al mezclar sobre fondo verde */
+  color:#fff;
+  text-decoration:none;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius: 999px;            /* píldora */
+  transition: all .2s ease;
+}
+/* Hover/foco accesible */
+nav .nav-btn:hover,
+nav .nav-btn:focus{
+  background:#fff;
+  color:var(--muni-green);
+  border-color:#fff;
+  text-decoration:none;
+  outline:0;
+}
+/* Variante “sólida” para Iniciar Sesión (sigue siendo verde) */
+nav .nav-btn.nav-btn--solid{
+  background:var(--muni-green);
+  border-color:#fff;
+}
+
+/* =========================================================
+   SECCIONES Y TARJETAS
+   ========================================================= */
+.section-title{ color:var(--muni-green); letter-spacing:.2px; }
+
+.card-soft{ background-color:var(--soft); }
+
+.bg-cover{ background-size:cover !important; background-position:center !important; }
+
+/* Cinta decorativa multi-color (guía) */
+.ribbon{
+  height:8px;
+  background:
+    linear-gradient(90deg,
+      var(--accent-yellow) 0 30%,
+      var(--accent-coral) 30% 55%,
+      var(--muni-green) 55% 100%);
+  border-radius:0 0 .5rem .5rem;
+}
+
+/* Fondo alterno sutil para bloques grandes */
+.bg-section{
+  background:
+    radial-gradient(circle at 20px 20px, rgba(0,0,0,0.035) 1px, transparent 1px) 0 0/16px 16px,
+    #fff;
+}
+
+/* =========================================================
+   FORMULARIOS (selectores combinados etiqueta + clase)
+   ========================================================= */
+input.form-control:focus,
+textarea.form-control:focus{
+  border-color:var(--muni-green);
+  box-shadow:0 0 0 .2rem rgba(15,90,74,.15);
+}
+
+/* =========================================================
+   FOOTER (contraste y visibilidad)
+   ========================================================= */
+.footer-muni{ background:var(--muni-green); }
+.footer-muni a{ color:#fff; }
+.footer-muni a:hover{ text-decoration:underline; }
+
+/* =========================================================
+   RESPONSIVE < 768 px (solo microajustes; el layout lo maneja Bootstrap)
+   ========================================================= */
+@media (max-width:767.98px){
+  .site-title{ font-size:1.5rem; }
+  nav .nav-btn{ padding:.4rem .8rem; }
+}
