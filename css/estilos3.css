@@ -1,10 +1,10 @@
 /* =========================================================
-   PALETA + TIPOGRAFÍA (variables reutilizables)
-   ========================================================= */
+   PALETA + TIPOGRAFÍA (variables reutilizables)#003f72;
+   ========================================================= #9bfab0;  */
 :root{
-  --muni-green: #0f5a4a;     /* barra y títulos */
+  --muni-green: #0E1F53;     /* barra y títulos */
   --muni-green-dark:#0b4035; /* pie inferior */
-  --accent-yellow:#f0b323;   /* acentos/badges/botón */
+  --accent-yellow: #d5dee1; /* acentos/badges/botón */
   --accent-coral: #e85d6a;   /* detalle decorativo */
   --ink: #1b1f24;            /* texto principal */
   --soft: #f6f7f8;           /* fondos de tarjetas */
@@ -76,7 +76,7 @@ h1, h2, h3, .navbar-brand{
 
 /* título de sección con color institucional */
 .section-title{
-  color: var(--muni-green);
+  color: var(--ink);
   letter-spacing:.2px;
 }
 
