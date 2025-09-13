@@ -1,48 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - CityTur Catamarca</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar Sesión - CityTur Catamarca</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 
-    <main>
-        <h1>Iniciar Sesión</h1>
+  <!-- NAV -->
+  <header class="shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-azul fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 " href="index.html">
+          <img class="brand-icon rounded-circle d-inline-block" src="../img/icono.jpeg" alt="logo-empresa">
+          CityTur Catamarca
+        </a>
 
-        <form>
-            <div>
-                <label for="email">Correo Electrónico</label><br>
-                <input type="email" id="email" placeholder="nombre@ejemplo.com" required>
-            </div>
-            <br>
-            <div>
-                <label for="password">Contraseña</label><br>
-                <input type="password" id="password" placeholder="Contraseña" required>
-            </div>
-            <br>
-            <div>
-                <label>
-                    <input type="checkbox" value="remember-me"> Recordarme
-                </label>
-            </div>
-            <br>
-            <button type="submit">Ingresar</button>
-        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <br>
-        <div>
-            <a href="#">¿Olvidaste tu contraseña?</a>
+        <div id="navMain" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="recorridos.html">Recorridos</a></li>
+            <li class="nav-item"><a class="nav-link" href="puntos.html">Puntos Turísticos</a></li>
+            <li class="nav-item"><a class="nav-link" href="reservas.html">Reservar</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-sesion" href="login.html">Iniciar Sesión</a>
+            </li>
+          </ul>
         </div>
-        <div>
-            <a href="#">Crear una cuenta de turista</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+          <article class="card border-0 shadow-sm card-soft">
+            <div class="card-body p-4 p-md-5">
+              <h1 class="h3 mb-3 text-center section-title">Iniciar Sesión</h1>
+
+              <form action="#" method="post" class="row g-3">
+                <div class="col-12">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="nombre@ejemplo.com" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" required>
+                </div>
+
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="remember-me" id="remember">
+                    <label class="form-check-label" for="remember">Recordarme</label>
+                  </div>
+                  <a href="#" class="small">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <div class="col-12 d-grid">
+                  <button type="submit" class="btn btn-primary">Ingresar</button>
+                </div>
+
+                <div class="col-12 text-center">
+                  <a href="#" class="small">Crear una cuenta de turista</a>
+                </div>
+              </form>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-azul text-white">
+    <div class="container section-pad">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <h5 class="mb-2">Municipalidad de SFV de Catamarca – CityTur Catamarca</h5>
+          <p class="mb-1">Secretaría de Turismo • Av. Güemes 650</p>
+          <p class="mb-0">Tel: +54 (383) 000-000</p>
         </div>
 
-    </main>
+        <div class="col-md-6">
+          <div class="d-flex flex-column align-items-md-end">
+            <h5 class="mb-2">Horarios de atención</h5>
+            <p class="mb-1">Lunes a Viernes: 8:00–13:00 y 17:00–20:00</p>
+            <p class="mb-3 mb-md-2">Sábados: 9:00–12:00</p>
 
-    <footer>
-         <p>&copy; 2025 CityTur Catamarca. Todos los derechos reservados.</p>
-    </footer>
+            <div class="d-flex gap-3">
+              <a class="social-link" href="#" aria-label="Instagram">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+              </a>
+              <a class="social-link" href="#" aria-label="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+              </a>
+              <a class="social-link" href="#" aria-label="Facebook">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1Z" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <hr class="border-light opacity-25 my-4">
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small">
+        <span>© 2025 CityTur Catamarca</span>
+        <nav class="d-flex gap-3">
+          <a class="link-light text-decoration-none" href="#">Accesibilidad</a>
+          <a class="link-light text-decoration-none" href="#">Privacidad</a>
+          <a class="link-light text-decoration-none" href="#">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
