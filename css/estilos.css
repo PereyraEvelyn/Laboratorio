@@ -1,0 +1,164 @@
+:root{
+  --azul: #0E1F53;           
+  --azul-oscuro:#0b2a6b;     
+  --acento:#d5dee1;         
+  --coral:#e85d6a;           
+  --tinta:#1b1f24;           
+  --suave:#f6f7f8;           
+}
+
+/* LETRAS */
+html, body{
+  font-family:"Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color:var(--tinta);
+   padding-top: 50px;
+}
+
+.main-bg .container {
+  border-radius: 8px;        
+}
+
+
+
+
+h1, h2, h3, .navbar-brand{
+  font-family:"Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight:700;
+}
+
+
+/* COLOR  */
+.bg-azul{ 
+  background-color:var(--azul) !important; 
+}
+
+.bg-azul-oscuro{ 
+  background-color:var(--azul-oscuro) !important; 
+}
+
+.text-bg-accent{ 
+  color:#111; background-color:var(--acento) !important; 
+}
+
+
+/* Botón de iniciar sesión  */
+.btn-sesion{
+  color:#fff;
+  border:1.5px solid #fff;
+  background:transparent;
+  padding:.45rem 1rem;
+  border-radius:999px;
+}
+
+.btn-sesion:hover,.btn-sesion:focus{
+  background:#e19d50;
+  color:#fff;
+  text-decoration:none;
+}
+
+
+
+/* LOGO   */
+.brand-icon{
+  width: 60px;       
+  height: auto;      
+  margin-right: 8px; 
+  background:linear-gradient(135deg, var(--coral), var(--acento));
+}
+
+/* =========================
+   Hero
+   ========================= */
+.hero-landing{
+  min-height:52vh;
+  background:
+    /*linear-gradient(180deg, rgba(0,0,0,.40), rgba(0,0,0,.05)),*/
+    url("../img/portada1.jpeg");
+}
+
+.hero-card{
+ /*
+  
+  box-shadow:0 10px 30px rgba(0,0,0,.10);¨*/
+
+
+
+  
+ /* Fondo semitransparente (negro al 35%) */
+  background-color: rgba(0,0,0,.35);
+  /* efecto vidrio sobre la foto de fondo :   backdrop-filter: blur(6px);
+*/
+  border-radius: .75rem;
+ 
+}
+
+/*  tarjetas */
+.section-pad{
+   padding:3.5rem 0; 
+  }
+
+.section-title{ 
+  color:var(--azul); 
+  letter-spacing:.2px; 
+}
+
+.card-soft{ 
+  background-color:var(--suave); 
+}
+
+
+.bg-cover{ 
+  background-size:cover !important; 
+  background-position:center !important; 
+}
+
+.card-hover{
+  transition: transform .30s ease, box-shadow .70s ease, filter .60s ease;
+}
+
+.card-hover:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
+/*   Formularios*/
+
+input.form-control:focus, select.form-select:focus, textarea.form-control:focus{
+  border-color:var(--azul);
+  box-shadow:0 0 0 .2rem rgba(14,31,83,.15);
+}
+
+/* Footer*/
+.footer-azul{
+  background:var(--azul);
+}
+
+.footer-azul a{ 
+  color:#ffffff; 
+}
+
+
+.social-link{
+  color:#fff;                 
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:36px;height:36px;
+  border:1px solid rgba(255,255,255,.6);
+  border-radius:50%;
+  transition:background .2s ease, transform .2s ease, border-color .2s ease;
+}
+
+.social-link:hover{
+  background:rgba(255,255,255,.15);
+  border-color:#fff;
+  transform:translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width:767.98px){
+  .hero-landing{ min-height:44vh; }
+  .hero-card{ padding:1.25rem !important; }
+}
+
+
