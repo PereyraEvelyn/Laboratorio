@@ -1,10 +1,10 @@
 :root{
-  --azul: #0E1F53;           
-  --azul-oscuro:#0b2a6b;     
-  --acento:#d5dee1;         
-  --coral:#e85d6a;           
-  --tinta:#1b1f24;           
-  --suave:#f6f7f8;           
+  --azul: #0E1F53;
+  --azul-oscuro:#0b2a6b;
+  --acento:#d5dee1;
+  --coral:#e85d6a;
+  --tinta:#1b1f24;
+  --suave:#f6f7f8;
 }
 
 /* LETRAS */
@@ -15,7 +15,7 @@ html, body{
 }
 
 .main-bg .container {
-  border-radius: 8px;        
+  border-radius: 8px;
 }
 
 
@@ -28,16 +28,16 @@ h1, h2, h3, .navbar-brand{
 
 
 /* COLOR  */
-.bg-azul{ 
-  background-color:var(--azul) !important; 
+.bg-azul{
+  background-color:var(--azul) !important;
 }
 
-.bg-azul-oscuro{ 
-  background-color:var(--azul-oscuro) !important; 
+.bg-azul-oscuro{
+  background-color:var(--azul-oscuro) !important;
 }
 
-.text-bg-accent{ 
-  color:#111; background-color:var(--acento) !important; 
+.text-bg-accent{
+  color:#111; background-color:var(--acento) !important;
 }
 
 
@@ -60,9 +60,9 @@ h1, h2, h3, .navbar-brand{
 
 /* LOGO   */
 .brand-icon{
-  width: 60px;       
-  height: auto;      
-  margin-right: 8px; 
+  width: 60px;
+  height: auto;
+  margin-right: 8px;
   background:linear-gradient(135deg, var(--coral), var(--acento));
 }
 
@@ -78,38 +78,38 @@ h1, h2, h3, .navbar-brand{
 
 .hero-card{
  /*
-  
+
   box-shadow:0 10px 30px rgba(0,0,0,.10);¨*/
 
 
 
-  
+
  /* Fondo semitransparente (negro al 35%) */
   background-color: rgba(0,0,0,.35);
   /* efecto vidrio sobre la foto de fondo :   backdrop-filter: blur(6px);
 */
   border-radius: .75rem;
- 
+
 }
 
 /*  tarjetas */
 .section-pad{
-   padding:3.5rem 0; 
+   padding:3.5rem 0;
   }
 
-.section-title{ 
-  color:var(--azul); 
-  letter-spacing:.2px; 
+.section-title{
+  color:var(--azul);
+  letter-spacing:.2px;
 }
 
-.card-soft{ 
-  background-color:var(--suave); 
+.card-soft{
+  background-color:var(--suave);
 }
 
 
-.bg-cover{ 
-  background-size:cover !important; 
-  background-position:center !important; 
+.bg-cover{
+  background-size:cover !important;
+  background-position:center !important;
 }
 
 .card-hover{
@@ -133,13 +133,13 @@ input.form-control:focus, select.form-select:focus, textarea.form-control:focus{
   background:var(--azul);
 }
 
-.footer-azul a{ 
-  color:#ffffff; 
+.footer-azul a{
+  color:#ffffff;
 }
 
 
 .social-link{
-  color:#fff;                 
+  color:#fff;
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -160,5 +160,3 @@ input.form-control:focus, select.form-select:focus, textarea.form-control:focus{
   .hero-landing{ min-height:44vh; }
   .hero-card{ padding:1.25rem !important; }
 }
-
-
