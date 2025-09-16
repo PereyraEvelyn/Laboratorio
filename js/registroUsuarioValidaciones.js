@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const pass2 = document.getElementById('password2');
   const terminos = document.getElementById('terminos');
 
-  // 3) Función para mostrar mensaje de error bajo el campo
   function mostrarError(input, mensaje) {
     input.style.border = '2px solid red';
     let help = input.nextElementSibling;
@@ -25,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
     help.textContent = mensaje;
   }
 
-  // 4) Función para limpiar estado de error de un campo
   function limpiarError(input) {
     input.style.border = '';
     const help = input.nextElementSibling;
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // 5) Validaciones básicas (usando lo visto: strings, regex, if/else)
   function validarNombreApellido() {
     let ok = true;
 
@@ -104,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
       mostrarError(fechaNac, 'La fecha no puede ser futura.');
       ok = false;
     } else {
-      // calculo de edad
       const edad = hoy.getFullYear() - fn.getFullYear() - ((hoy.getMonth() < fn.getMonth() || (hoy.getMonth() === fn.getMonth() && hoy.getDate() < fn.getDate())) ? 1 : 0);
       if (edad < 13) {
         mostrarError(fechaNac, 'Debés tener al menos 13 años.');
@@ -137,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
       limpiarError(pass1);
     }
 
-    // Confirmación igual a la anterior
     if (pass2.value !== pass1.value) {
       mostrarError(pass2, 'Las contraseñas no coinciden.');
       ok = false;
@@ -157,7 +152,6 @@ document.addEventListener('DOMContentLoaded', function () {
     return true;
   }
 
-  // 6) Manejador del submit (preventDefault + validaciones + try/catch)
   form.addEventListener('submit', function (e) {
     e.preventDefault(); 
     try {
