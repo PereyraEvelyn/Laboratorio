@@ -1,4 +1,4 @@
-// Espera a que todo el contenido del HTML se cargue antes de ejecutar el script.
+
 document.addEventListener('DOMContentLoaded', function() {
 
   const loginForm = document.querySelector('form');
